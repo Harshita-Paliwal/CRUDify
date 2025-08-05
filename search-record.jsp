@@ -81,7 +81,7 @@
 <%
     String eid = request.getParameter("eid");
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/wjsp12", "root", "mysql");
+    Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "your_db_username", "your_db_password");
     PreparedStatement ps = cn.prepareStatement("select * from employeeinfo where eid=?");
     ps.setString(1, eid);
     ResultSet rst = ps.executeQuery();

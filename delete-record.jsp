@@ -5,7 +5,7 @@
 <head>
     <style>
         body {
-            background: url("<%=request.getContextPath()%>/images/deletebg.jpg") no-repeat center center fixed;
+            background: url("<%=request.getContextPath()%>/images/deletebg.jpg") no-repeat center center fixed; 
             background-size: cover;
             font-family: Arial, sans-serif;
         }

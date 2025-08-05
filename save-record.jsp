@@ -50,7 +50,7 @@
     }
 
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/wjsp12", "root", "mysql");
+    Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "your_db_username", "your_db_password");
 
     PreparedStatement checkPs = cn.prepareStatement("SELECT * FROM employeeinfo WHERE eid = ?");
     checkPs.setString(1, eid);

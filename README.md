@@ -12,16 +12,14 @@
 ---
 🔧 Features:
 Implemented Create, Read, Update, Delete (CRUD) operations on employee records.
-
 Built using MVC architecture to ensure modularity and maintainability.
-
 Designed user-friendly JSP pages with integrated form validations.
-
 Connected securely to MySQL database via JDBC with proper exception handling.
-
 Structured using webapp/WEB-INF/META-INF conventions for deployable war packaging.
+
 ---
 ⚙️ Configuration Note
+
 🔒 **Update the JDBC credentials** in your connection code as shown below:
 ```java
 String url = "jdbc:mysql://localhost:3306/your_database_name";

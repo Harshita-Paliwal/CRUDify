@@ -27,7 +27,7 @@
 <body onload="makeActive('delete')">
   <%
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/wjsp12", "root", "mysql");
+    Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "your_db_username", "your_db_password");
 
     String eid = request.getParameter("eid");
     PreparedStatement ps = cn.prepareStatement("delete from employeeinfo where eid=?");
